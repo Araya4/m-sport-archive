@@ -1,0 +1,97 @@
+/* Basic styling for dropdowns */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: rgb(161, 161, 161);
+    border-color: rgb(161, 161, 161);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Dropdown content (links) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Nested dropdown styles */
+.nested-dropdown {
+    position: relative;
+}
+
+.nested-dropdown .dropdown-content {
+    top: 0;
+    left: 100%;
+    display: none;
+}
+
+.nested-dropdown:hover .dropdown-content {
+    display: block;
+}
+.ball{
+            
+    height: 50px;
+    width: 50px;
+    background-image: url('asset/ballv2-192x192.png');
+    background-size: cover;
+    
+}
+.btn-light{
+    background-color: rgb(246, 244, 244);
+}
+.gray-item{
+    background-color: rgb(161, 161, 161);
+    border-color: rgb(161, 161, 161);
+    color:wheat
+}
+.row{
+    margin-top: 0.3%;
+    margin-left: 10%;
+    width: fit-content;
+}
+.fi{
+    width: 46px;
+    height: 30px;
+}
+.col-1{
+    margin-right: 10px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin-left: 3%;
+}
+iframe{
+    margin-left: 5%;
+    width: 80%;
+    height: 80%;
+}
+b{margin-right: 3px;}
+.dropdown button{
+    width: fit-content;
+    margin-right: 1px;
+}
