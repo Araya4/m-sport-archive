@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"/>
     <title> Archive Volleyball </title>
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <!-- <button class="btn btn-outline-success"><i class="fa fa-headphones" aria-hidden="true"></i> Playlists</button>
@@ -135,6 +136,25 @@
                     </div>
                 </ul>
               </li>
+              <li class="nav-item dropdown">
+                <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img width="20" src="asset/VBW/favicon-32x32.png" alt="">
+                </button>
+                <ul class="dropdown-menu">
+                    <div class="btn-group" role="group">
+                        <button class="btn btn-light" value="jpavc23" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-jp"></span>AVC23</button>
+                        <button class="btn btn-light" value="us22_full" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-us"></span>WC22</button>
+                        <button class="btn btn-light" value="brvnl22_full" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-br"></span>VNL22</button>
+                        <button class="btn btn-light" value="trvnl22_full" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-tr"></span>VNL22</button>
+                        <button class="btn btn-light" value="kroqt16" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-kr"></span>OQT16</button>
+                        <button class="btn btn-light" value="jpwgp17" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-jp"></span>WGP17</button>
+                        <button class="btn btn-light" value="ruWC18_en" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-ru"></span>WC18</button>
+                        <button class="btn btn-light" value="usWC18_full" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-us"></span>WC18</button>
+                        
+                        
+                    </div>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -147,8 +167,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
         const youtubeID = {
-            'arvnl18':'M6BXAlPJwM8','jpvnl18':'W-3wEr_emP4',"plvnl18":"TFYqfifFmCk",
-            "russia":"eCxNoF-GWjA","us18":"7vtytDEt04A","kr18":"wCFh3ScLyFo",
+            'arvnl18':'M6BXAlPJwM8','jpvnl18':'W-3wEr_emP4',"plvnl18":"TFYqfifFmCk","kroqt16":"DpP9qNc5Qks","jpwgp17":"IwBXuOI0U1o","ruWC18_en":"cuF1G5-ur1c","usWC18_full":"7vtytDEt04A",
+            "russia":"eCxNoF-GWjA","us18":"7vtytDEt04A","jpavc23":"BveD70tcbvw","kr18":"wCFh3ScLyFo","us22_full":"ymO5tIxUqAg","brvnl22_full":"Iy8HmOAQQVs","trvnl22_full":"oqTs2sZ-fN0",
             "crowc22":"wkO-MdwRieY","domwc22":"Hf1BEaenOCc","korwc22":"4R6kwZ96qRM","turwc22":"PCx9ca6ZN5M","usawc22":"5eFgL1iCF4U",
             "chnvnl22":"XE46XPAwSAI","belvnl22":"RE1TOkZ8TuQ","bgvnl22":"92EvAZIiThI","rsvnl22":"wHuxT6egOT8","polvnl22":"gdgBSKlmLYo",
             "usavnl22":"LRZLQZYq9Ow","canvnl22":"jfbQDR1tMXM","brvnl22":"fycJYnCtUmE","krvnl22":"FeC09MzV7_o","domvnl22":"Q09VwYoaJCg",
