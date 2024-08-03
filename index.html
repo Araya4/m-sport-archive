@@ -11,15 +11,7 @@
 
 </head>
 <body>
-    <!-- <button class="btn btn-outline-success"><i class="fa fa-headphones" aria-hidden="true"></i> Playlists</button>
-    <button class="btn btn-outline-success"><i class="fa fa-futbol-o" aria-hidden="true"></i> Football</button>
-    <button class="btn btn-outline-success"><i class="fa fa-globe" aria-hidden="true"></i>Global</button>
-    <button class="btn btn-outline-success"><i class="fa fa-television" aria-hidden="true"> TV</i></button>
-    <button class="btn btn-outline-success"><i class="fa fa-film" aria-hidden="true"></i> Movies</button>
-    <button class="btn btn-outline-success"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Education</button>
-    <button class="btn btn-light"><i class="fa fa-youtube" aria-hidden="true"></i></button>
-    <hr> -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><div class="ball"></div></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +20,7 @@
           <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
             <ul class="navbar-nav">
               <li class="nav-item dropdown">
-                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     <b>VNL2018</b>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-light">
@@ -41,7 +33,7 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     <b>WC2018</b>
                 </button>
                 <ul class="dropdown-menu">
@@ -54,64 +46,74 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     <b>VNL2022</b>
                 </button>
                 <ul class="dropdown-menu">
                     <div class="btn-group" role="group">
-                        <button class="btn btn-light" value="bgvnl22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-bg"></span></button>
-                        <button class="btn btn-light" value="rsvnl22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-rs"></span></button>
-                        <button class="btn btn-light" value="belvnl22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-be"></span></button>
-                        <button class="btn btn-light" value="chnvnl22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-cn"></span></button>
+                        <button class="btn btn-light" value="bgvnl22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-bg"></span><img src="asset/VBW/favicon-16x16.png" alt=""></button>
+                        <button class="btn btn-light" value="rsvnl22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-rs"></span><img src="asset/VBW/favicon-16x16.png" alt=""></button>
+                        <button class="btn btn-light" value="belvnl22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-be"></span><img src="asset/VBW/favicon-16x16.png" alt=""></button>
+                        <button class="btn btn-light" value="chnvnl22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-cn"></span><img src="asset/VBW/favicon-16x16.png" alt=""></button>
                         
                     </div>
                     <div class="btn-group" role="group">
-                        <button class="btn btn-light" value="canvnl22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-ca"></span></button>
-                        <button class="btn btn-light" value="polvnl22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-pl"></span></button>
-                        <button class="btn btn-light" value="usavnl22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-us"></span></button>
-                        <button class="btn btn-light" value="krvnl22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-kr"></span></button>
+                        <button class="btn btn-light" value="canvnl22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-ca"></span><img src="asset/VBW/favicon-16x16.png" alt=""></button>
+                        <button class="btn btn-light" value="polvnl22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-pl"></span><img src="asset/VBW/favicon-16x16.png" alt=""></button>
+                        <button class="btn btn-light" value="usavnl22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-us"></span><img src="asset/VBW/favicon-16x16.png" alt=""></button>
+                        <button class="btn btn-light" value="krvnl22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-kr"></span><img src="asset/PWV/favicon-16x16.png" alt=""></button>
                         
                     </div>
                     <div class="btn-group" role="group">
-                        <button class="btn btn-light" value="domvnl22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-do"></span></button>
-                        <button class="btn btn-light" value="brvnl22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-br"></span></button>
-                        <button class="btn btn-light" value="turvnl22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-tr"></span></button>
+                        <button class="btn btn-light" value="domvnl22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-do"></span><img src="asset/VBW/favicon-16x16.png" alt=""></button>
+                        <button class="btn btn-light" value="brvnl22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-br"></span><img src="asset/VBW/favicon-16x16.png" alt=""></button>
+                        <button class="btn btn-light" value="turvnl22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-tr"></span><img src="asset/VBW/favicon-16x16.png" alt=""></button>
+                        <button class="btn btn-light" value="CHNVNL2022" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-cn"></span><img src="asset/PWV/favicon-16x16.png" alt=""></button>
                         
                     </div>
+                    <div class="btn-group" role="group">
+                        <button class="btn btn-light" value="rsvnl2022" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-rs"></span><img src="asset/PWV/favicon-16x16.png" alt=""></button>
+                        <button class="btn btn-light" value="belvnl2022" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-be"></span><img src="asset/PWV/favicon-16x16.png" alt=""></button>
+                        
+                    </div>
+     
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     <b>WC2022</b>
                 </button>
                 <ul class="dropdown-menu">
                     <div class="btn-group">
-                        <button class="btn btn-light" value="turwc22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-tr"></span></button>
-                        <button class="btn btn-light" value="korwc22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-kr"></span></button>
-                        <button class="btn btn-light" value="domwc22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-do"></span></button>
-                        <button class="btn btn-light" value="crowc22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-hr"></span></button>
-                        
-                    </div>
+                        <button class="btn btn-light" value="turwc22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-tr"></span><img src="asset/PWV/favicon-16x16.png" alt=""></button>
+                        <button class="btn btn-light" value="korwc22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-kr"></span><img src="asset/VBW/favicon-16x16.png" alt=""></button>
+                        <button class="btn btn-light" value="domwc22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-do"></span><img src="asset/VBW/favicon-16x16.png" alt=""></button>
+                        <button class="btn btn-light" value="crowc22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-hr"></span><img src="asset/VBW/favicon-16x16.png" alt=""></button>
+                        </div>
                     <div class="btn-group">
-                        <button class="btn btn-light" value="usawc22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-us"></span></button>
+                        <button class="btn btn-light" value="usawc22" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-us"></span><img src="asset/VBW/favicon-16x16.png" alt=""></button>
+                        <button class="btn btn-light" value="DOMWC2022" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-do"></span><img src="asset/PWV/favicon-16x16.png" alt=""></button>
+                    
                     </div>
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     <b>VNL2023</b>
                 </button>
                 <ul class="dropdown-menu">
                     <div class="btn-group" role="group">
-                        <button class="btn btn-light" value="itavnl23" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-it"></span></button>
-                        <button class="btn btn-light" value="canvnl23" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-ca"></span></button>
-                        <button class="btn btn-light" value="korvnl23" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-kr"></span></button>
-                        <button class="btn btn-light" value="srbvnl23" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-rs"></span></button>
+                        <button class="btn btn-light" value="itavnl23" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-it"></span><img src="asset/VBW/favicon-16x16.png" alt=""></button>
+                        <button class="btn btn-light" value="canvnl23" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-ca"></span><img src="asset/VBW/favicon-16x16.png" alt=""></button>
+                        <button class="btn btn-light" value="korvnl23" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-kr"></span><img src="asset/VBW/favicon-16x16.png" alt=""></button>
+                        <button class="btn btn-light" value="srbvnl23" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-rs"></span><img src="asset/VBW/favicon-16x16.png" alt=""></button>
+                        <button class="btn btn-light" value="ITAVNL2023" onclick="show(this.value)" data-bs-target="#myVid" data-bs-toggle="collapse"><span class="fi fi-it"></span><img src="asset/PWV/favicon-16x16.png" alt=""></button>
+                        
                     </div>
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     <b>OQT2023</b>
                 </button>
                 <ul class="dropdown-menu">
@@ -125,7 +127,7 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     <b>VNL2024</b>
                 </button>
                 <ul class="dropdown-menu">
@@ -137,7 +139,7 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     <img width="20" src="asset/VBW/favicon-32x32.png" alt="">
                 </button>
                 <ul class="dropdown-menu">
@@ -161,7 +163,10 @@
       </nav>
       <hr>
     <div class="collapse video-container" id="myVid"><iframe id="myIframe" src="" frameborder="0" allowfullscreen></iframe></div>
-
+    <!-- BG WC2018 https://www.youtube.com/watch?v=fJJTdjYJyPs
+     https://www.youtube.com/embed/fskTl5Z7PLk
+     OQT2016 KOR - https://www.youtube.com/watch?v=2Dw9QNH5KtU
+      -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -174,10 +179,9 @@
             "usavnl22":"LRZLQZYq9Ow","canvnl22":"jfbQDR1tMXM","brvnl22":"fycJYnCtUmE","krvnl22":"FeC09MzV7_o","domvnl22":"Q09VwYoaJCg",
             "turvnl22":"JVk0kJf3YJY","itavnl23":"g_8_h-Fpfeo","canvnl23":"X83GsHhs1zo","korvnl23":"GvhdVW1PJCU","srbvnl23":"GjGjNaeebeE",
             "coloqt23":"ead1CmyRPGM","ploqt23":"kwFmHYiWI-k","sioqt23":"uDpZBdHpKm4","kroqt23":"dMAaq-DXW_k","bgvnl24":"RCdADH7jK-8",
-            "brvnl24":"fPUJfwYIBQc"
+            "brvnl24":"fPUJfwYIBQc","DOMWC2022":"MXc5tQ88mk0","CHNVNL2022":"uf2nnP0CmZQ","ITAVNL2023":"MDZFt2HJL4M","rsvnl2022":"MhV1TbHrqC8","belvnl2022":"3pRrze0zui0"
         }
-
-
+        
         function show(text){
             document.getElementById('myIframe').src = "https://www.youtube.com/embed/"+youtubeID[text];
         }
