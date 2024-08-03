@@ -1,20 +1,24 @@
-        .navbar-toggler-icon {
-            background-color: rgb(237, 172, 172);
-            border-color: rgb(233, 190, 190);;
-            border-style:solid;
-        }
-        .btn-light{
-            background-color: rgb(246, 244, 244);
-        }
-        .ball{
-            
-            height: 50px;
-            width: 50px;
-            background-image: url('asset/ballv2-192x192.png');
-            background-size: cover;
-            
-        }
-        .fi{
-            width: 46px;
-            height: 30px;
-        }
+.navbar-toggler-icon {
+    background-color: rgb(237, 172, 172);
+    border-color: rgb(233, 190, 190);;
+    border-style:solid;
+}
+.btn-light{
+    background-color: rgb(246, 244, 244);
+}
+.ball{
+    
+    height: 50px;
+    width: 50px;
+    background-image: url('asset/ballv2-192x192.png');
+    background-size: cover;
+    
+}
+.fi{
+    width: 46px;
+    height: 30px;
+}
+iframe{
+    width: 90%;
+    height: 90%;
+}
