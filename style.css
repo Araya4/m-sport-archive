@@ -1,0 +1,55 @@
+/* Container for the sliding effect */
+.slider-container {
+  overflow: hidden; /* Hide the overflowing content */
+  width: 100%; /* Full width of the container */
+  position: relative; /* Positioning for absolute children */
+  margin-left: 1%;
+}
+/* Wrapper for the images */
+.slider {
+  display: flex; /* Arrange images in a row */
+  width: fit-content; /* Adjust based on number of images and width */
+  animation: slide 100s linear infinite; /* Slide animation */
+}
+
+.thumbnail {
+  width: fit-content; /* Fixed width for thumbnails */
+  height: 100px; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between images */
+}
+
+/* Keyframes for sliding effect */
+@keyframes slide {
+  0% {
+  transform: translateX(0); /* Start position */
+  }
+  100% {
+  transform: translateX(-100%); /* End position, move left by the width of one full slider */
+  }
+}
+
+.video-container {
+  position: relative;
+  top:2%;
+  width: 90%; /* Set the desired width */
+  padding-top: 62.5%; /* 4:3 Aspect Ratio (3 / 4 = 0.75 or 75%) */
+  margin: 0 auto; /* Center the container horizontally */
+  overflow: hidden; /* Hide anything outside the container */
+}
+
+/* Style for the iframe */
+.video-container iframe {
+  position: absolute; /* Position the iframe absolutely within the container */
+  top: 0;
+  left: 0%;
+  width: 100%; /* Make iframe fill the container */
+  height: 100%; /* Make iframe fill the container */
+  overflow: hidden;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .video-container {
+      padding-top: 62.5%; /* 4:3 Aspect Ratio */
+  }
+}
