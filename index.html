@@ -89,7 +89,7 @@
             <img class="thumbnail" src="https://i.ytimg.com/vi/oqTs2sZ-fN0/hqdefault.jpg" alt="TUR VNL22 (Full)">
             <!-- DOM-WC2022 -->
             <img class="thumbnail" src="https://www.dailymotion.com/thumbnail/video/k1cLYX7vQUeAq2Bohym" alt="Turkey WC2022 1-2">
-            <img class="thumbnail" src="https://www.dailymotion.com/thumbnail/video/k3OhC9tzrED0gLBohyA" alt="Turkey WC2022 3">
+            <img class="thumbnail" src="https://placehold.co/150x100/cadetblue/wheat?text=WC2022+TUR" alt="Turkey WC2022 3">
             <img class="thumbnail" src="https://www.dailymotion.com/thumbnail/video/k21bXdHi0IcyA0Bohys" alt="Turkey WC2022 4-5">
             <img class="thumbnail" src="https://i.ytimg.com/vi/ymO5tIxUqAg/hqdefault.jpg" alt="USA WC22 (Full)">
             <img class="thumbnail" src="https://www.dailymotion.com/thumbnail/video/k7KBqEOhI5euvcBohyw" alt="ITA - VNL2023 1-2">
@@ -125,7 +125,7 @@
             const match = url.match(regex);
             const regex2 = /\/video\/([a-zA-Z0-9_-]{19})/;
             const match2 = url.match(regex2);
-            return match ? `https://www.youtube.com/embed/${match[1]}` : `https://www.dailymotion.com/embed/video/${match2[1]}`;
+            return match ? `https://www.youtube.com/embed/${match[1]}` : (match2?`https://www.dailymotion.com/embed/video/${match2[1]}`:"https://player.vimeo.com/video/1005053180?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479");
         }
 
         const myLists = document.querySelectorAll('.thumbnail');
