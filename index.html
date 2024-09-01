@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn2.iconfinder.com/data/icons/flags-circle-3d/100/Thailand-512.png" type="image/x-icon">
+    
+    <title>Archive Volleyball Matches</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./scrollable.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9">
+                <!-- Left side content -->
+                 <div class="video-container">
+                    <iframe id="shown" src="" frameborder="0"></iframe>
+                    
+                 </div>
+            </div>
+            <div class="col-md-3">
+                <!-- Right side fixed-size and scrollable -->
+                <div class="scrollable-div">
+                    <div class="text-box">BRA vs THA VNL2022</div>
+                    <div class="text-box">TUR VNL2022</div>
+                    <div class="text-box">USA WC2022</div>
+                    <div class="text-box">WC2022 Thailand vs Turkey {1} - {2}</div>
+                    <div class="text-box">WC2022 Thailand vs Turkey {3}</div>
+                    <div class="text-box">WC2022 Thailand vs Turkey {4} - {5}</div>
+                    <div class="text-box">AVC2023 Japan vs Thailand</div>
+                    <div class="text-box">VNL2023 Italy vs Thailand {1}{2}</div>
+                    <div class="text-box">VNL2023 Italy vs Thailand {3}{4}</div>
+                    <div class="text-box">OQT2023 Italy vs Thailand</div>
+                    <div class="text-box">OQT2023 Thailand vs Poland {1}</div>
+                    <div class="text-box">OQT2023 Thailand vs Poland {3}</div>
+                    <div class="text-box">OQT2023 Thailand vs Poland {4}</div>
+                    <div class="text-box">OQT2023 Thailand vs Poland {5}</div>
+                    <div class="text-box">OQT2023 Thailand vs Slovenia</div>
+                    <div class="text-box">OQT2023 Thailand vs Korea</div>
+                    <div class="text-box">OQT2023 Thailand vs Colombia {1} - {2}</div>
+                    <div class="text-box">OQT2023 Thailand vs Colombia {3}</div>
+                    <div class="text-box">OQT2023 Thailand vs Colombia {4}</div>
+                    <div class="text-box">OQT2023 Thailand vs USA</div>
+                    <div class="text-box">OQT2023 Thailand vs Germany</div>
+
+                    <!-- Add more text boxes as needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="./videoList.js"></script>
+    <script>
+        console.log(videoUrl);
+
+        const shown = document.getElementById("shown");
+        const textS = document.querySelectorAll(".text-box");
+        textS.forEach((element,i)=>{
+            element.addEventListener('click',function(e){
+                e.preventDefault();
+                shown.src = videoUrl[Number(i)];
+
+            })
+            
+        })
+    </script>
+</body>
+</html>
