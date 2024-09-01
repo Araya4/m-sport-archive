@@ -1,3 +1,7 @@
+body{
+  cursor: pointer;
+}
+
 /* Container for the sliding effect */
 .slider-container {
   overflow: hidden; /* Hide the overflowing content */
