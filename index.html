@@ -131,6 +131,10 @@
         const myLists = document.querySelectorAll('.thumbnail');
         myLists.forEach((element)=>{
             var videoId = getYouTubeVideoID(element.src);
+            element.setAttribute('data-bs-toggle', 'tooltip');
+            element.setAttribute('data-bs-placement', 'bottom'); // Change as needed
+            element.setAttribute('title', element.getAttribute('alt'));
+            
             element.addEventListener('click',function(e){
                 e.preventDefault();
               //  myVideo.src = videoId;
